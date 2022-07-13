@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * print_buffer - prints a buffer
  * Return: Always 0.
  */
 
