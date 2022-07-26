@@ -1,13 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * _wcount - counts number of words
  * @sw: string
  * Return: int
  */
-
 int _wcount(char *sw)
 {
 	int l, wc;
@@ -25,7 +23,7 @@ int _wcount(char *sw)
 	}
 	return (wc);
 }
-/***
+/**
  * _trspace - Moves adress to remove trailig whitespaces
  * @st: string
  * Return: Pointer
@@ -41,7 +39,6 @@ char *_trspace(char *st)
  * @str: string
  * Return: Double Pointer
  */
-
 char **strtow(char *str)
 {
 	char **s, *ts;
