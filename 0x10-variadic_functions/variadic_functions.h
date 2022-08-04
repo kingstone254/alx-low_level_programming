@@ -1,24 +1,25 @@
-#ifndef STRUCT_H
-#define STRUCT_H
+#ifndef VARIADIC_FUNCTIONS
+#define VARIADIC_FUNCTIONS
+
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
- * struct Ftype - Struct op
- * @tc: Parameter
- * @tf: The function associated
+ * struct print - print type with corresponding print function
+ * @t: print type
+ * @f: print function
  */
-typedef struct Ftype
-{
-	char *tc;
-	void (*tf)(va_list);
-} ftype;
-#endif
 
-#ifndef _FUNCTIONS_H
-#define _FUNCTIONS_H
+typedef struct print
+{
+	char *t;
+	void (*f)(va_list);
+} print_t;
+
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
-#endif
+
+#endif /*VARIADIC_FUNCTIONS*/
